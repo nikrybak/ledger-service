@@ -43,6 +43,7 @@ describe.skipIf(!databaseUrl)('PostgreSQL adapter (integration)', () => {
       currency: 'USD',
       allowNegativeBalance: false,
     });
+    if (balance === 0n) return account;
     await useCases.transferFunds.execute({
       idempotencyKey: randomUUID(),
       sourceAccountId: funding.id,
