@@ -17,7 +17,7 @@ export default tseslint.config(
     },
     rules: {
       '@typescript-eslint/consistent-type-imports': 'error',
-      '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true, allowBigInt: true }],
+      '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
       'no-console': 'error',
     },
   },
